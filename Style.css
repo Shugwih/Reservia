@@ -36,7 +36,6 @@ a {
 
 a .Header_Nav_Link:active {
     color: #747474;
-    border-top: 1px solid #0065FC;
 }
 
 a .Header_Nav_Link:hover {
@@ -80,6 +79,8 @@ i .fas fa-map-marker-alt {
 /*-------------------*/
 /*Filter*/
 
+
+
 #search_filters {
     display: flex;
     align-items: center;
@@ -89,23 +90,103 @@ i .fas fa-map-marker-alt {
 .filter {
     font-size: 1.25em;
     font-weight: bold;
-    border: 1px solid lightgrey;
+    border: 1px solid #F2F2F2;
     border-radius: 3em;
-    padding: 0.7em;
+    padding: 0.080rem;
+}
+
+.filter .fas {
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border-radius: 1px transparent solid;
+    border-radius: 50%;
+    padding: 0.8em;
 }
 
 /*Filter*/
 /*-------------------*/
 /*Core*/
 
+#Hosting_and_popular {
+    display: flex;
+}
+
 /*Hosting Section*/
+
+#Hosting_section h2 {
+    max-width: 70%;
+    border: 1px solid black;
+}
+
+#Main_Hosting_Box {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
 
 .Hosting_Box {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    max-width: 70%;
+    max-height: auto;
+    border: 1px solid black;
 }
 
-img {
-    max-width: 15%;
+#Hosting_section img {
+    max-width: 100%;
     height: auto;
 }
+
+/*Hosting Section*/
+/*-------------------*/
+/*Popular Section*/
+
+#Most_popular_titlebox {
+    display: flex;
+    flex-direction: row;
+}
+
+#Popular_section img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Popular Section*/
+/*-------------------*/
+/*Activity Section*/
+
+/*Activity Section*/
+#Activity_section div {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+#Activity_section img {
+    max-width: 50%;
+    height: auto;
+}
+
+/*Core*/
+/*-------------------*/
+/*Footer*/
+
+#Footer {
+    width: 100%;
+    background-color: #F2F2F2;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+#Footer h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Footer_Nav_Link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Footer*/
