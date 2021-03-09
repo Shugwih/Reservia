@@ -11,6 +11,10 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+form {
+    font-family: 'Raleway', sans-serif;
+}
+
 a {
     text-decoration: none;
 }
@@ -21,29 +25,28 @@ a {
 /*Header*/
 
 #Header {
-    margin-left: 2em;
+    margin-left: 22px;
 }
 
 #Header_Nav {
     display: flex;
     justify-content: flex-end;
-    margin-right: 3em;
+    margin-right: 22px;
 }
 
 .Header_Nav_Link {
-    margin-right: 4em;
-    color: #0065FC;
+    margin-right: 60px;
+    color: #4d6180;
     font-weight: bold;
     border: none;
     background-color: white;
 }
 
-a .Header_Nav_Link:active {
-    color: #747474;
-}
-
-a .Header_Nav_Link:hover {
-    color: #6ca7ff;
+.Header_Nav_Link:hover {
+    color: #0065FC;
+    cursor: pointer;
+    border-top: 3px solid #0065FC;
+    transition: border-top 2s linear;
 }
 
 #Hosting_main_title {
@@ -60,27 +63,27 @@ a .Header_Nav_Link:hover {
 /*Main*/
 
 #Main_description {
-    margin-left: 2em;
+    margin-left: 25px;
 }
 
 /*Research*/
 
 #search {
     display: flex;
-    margin-left: 2em;
+    margin-left: 20px;
 }
 
 #search .fas {
     border: 1px solid transparent;
     background-color: #F2F2F2;
-    border-radius: 1em 0 0 1em;
-    padding: 0.8em 0.9em 0.8em 0.9em;
+    border-radius: 15px 0 0 15px;
+    padding: 13px 15px 13px 15px;
 }
 
 #site_search {
     border: 1px solid;
     border-color: #F2F2F2 #F2F2F2 #F2F2F2 transparent;
-    padding: 0.7em;
+    padding: 15px;
 }
 
 #search input {
@@ -90,8 +93,8 @@ a .Header_Nav_Link:hover {
 
 #search_button {
     border: 1px solid transparent;
-    border-radius: 0 1em 1em 0;
-    padding: 0.7em;
+    border-radius: 0 12px 12px 0;
+    padding: 10px;
     background-color: #0065FC;
     color: white;
     font-weight: bold;
@@ -101,16 +104,21 @@ a .Header_Nav_Link:hover {
 /*-------------------*/
 /*Filter*/
 
+#filter_title {
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+#Main_filter {
+    display: flex;
+    align-items: center;
+}
+
 #search_filters {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    margin-left: 2em;
-    margin-top: 2em;
-}
-
-#search_filters h2 {
-    margin-right: 1em;
+    flex-wrap: wrap;
+    padding: 15px 15px 15px 0;
 }
 
 .filter {
@@ -119,13 +127,13 @@ a .Header_Nav_Link:hover {
     font-size: 1.25em;
     font-weight: bold;
     border: 2px solid #F2F2F2;
-    border-radius: 3em;
+    border-radius: 34px;
     cursor: pointer;
-    margin-right: 1em;
+    margin-right: 15px;
 }
 
 .sub_filters {
-    padding: 0.6em;
+    padding: 10px;
 }
 
 .filter .fas {
@@ -147,30 +155,31 @@ a .Header_Nav_Link:hover {
 #vacancy {
     display: flex;
     align-items: center;
-    margin-left: 2em;
+    margin-left: 25px;
 }
 
 #vacancy i {
-    padding-right: 1em;
+    padding-right: 11px;
 }
 
 /*-------------------*/
 /*Core*/
 
 #Hosting_and_popular {
-    display: flex;
+    display: grid;
+    grid-template-columns: 65% 35%;
 }
 
 #Hosting_and_popular section {
-    margin: 2em;
+    margin: 25px;
 }
 
 /*Hosting Section*/
 
 #Hosting_section {
     background-color: #F2F2F2;
-    border-radius: 2.5%;
-    padding: 1em;
+    border-radius: 15px;
+    padding: 15px;
 }
 
 #Hosting_section i {
@@ -179,7 +188,7 @@ a .Header_Nav_Link:hover {
 
 #Hosting_section h2 {
     max-width: 70%;
-    margin-left: 1em;
+    margin-left: 15px;
 }
 
 #Main_Hosting_Box {
@@ -191,22 +200,36 @@ a .Header_Nav_Link:hover {
     display: flex;
     flex-direction: column;
     max-height: auto;
-    border-radius: 1em;
-    margin: 1em;
+    border-radius: 15px;
+    margin: 12px;
     background-color: white;
-    margin-top: 0.5em;
-    padding: 0.3em;
+    margin-top: 6px;
+    padding: 5px;
+}
+
+.Hosting_text {
+    padding: 0px 10px 10px 10px;
+}
+
+.Hosting_img {
+    height: 134px;
+    width: auto;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
 }
 
 #Hosting_section img {
     max-width: 100%;
-    height: 50%;
-    border-radius: 1em 1em 0 0;
-    padding: 0;
+    max-height: auto;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #show_more_button {
     font-weight: bold;
+    font-size: 1.32em;
 }
 
 /*Hosting Section*/
@@ -215,12 +238,12 @@ a .Header_Nav_Link:hover {
 
 #Popular_section {
     background-color: #F2F2F2;
-    padding: 1em;
-    border-radius: 1em;
+    padding: 10px;
+    border-radius: 14px;
 }
 
 #Most_popular_title {
-    margin-left: 1em;
+    margin-left: 14px;
 }
 
 #Most_popular_titlebox {
@@ -229,22 +252,28 @@ a .Header_Nav_Link:hover {
 }
 
 #Most_popular_titlebox i {
-    padding-left: 7em;
+    padding-left: 70px;
     font-size: 135%;
 }
 
+.Most_popular_img {
+    max-height: 180px;
+    max-width: 180px;
+    overflow: hidden;
+}
+
 #Popular_section img {
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
-    border-radius: 1em;
+    border-radius: 10px;
 }
 
 .Most_popular {
     display: flex;
-    margin: 2em;
+    margin: 20px;
     background-color: white;
-    padding: 0.3em;
-    border-radius: 1em;
+    padding: 5px;
+    border-radius: 12px;
 }
 
 .Most_popular i {
@@ -254,7 +283,7 @@ a .Header_Nav_Link:hover {
 .Popular_box {
     display: flex;
     flex-direction: column;
-    margin: 2em;
+    margin: 20px;
     justify-content: center;
 }
 
@@ -270,22 +299,37 @@ a .Header_Nav_Link:hover {
     margin-bottom: 2em;
 }
 
-#Activity_section img {
-    max-width: 100%;
-    height: auto;
+.Activity_box {
+    margin: 25px;
 }
 
+.Activity_box figure {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.397);
+}
+
+.Activity_box figcaption {
+    padding-bottom: 10px;
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+
+.Activity_box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
 
 #Main_activity_box {
     display: grid;
     grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
-    border: 1px solid black;
 }
 
-.Activity_box {
+#Activity_3 #Activity_2 {
     display: flex;
-    flex-wrap: wrap;
-    padding: 1em;
+    flex-direction: column;
 }
 
 /*Core*/
@@ -298,18 +342,29 @@ a .Header_Nav_Link:hover {
     background-color: #F2F2F2;
     display: grid;
     grid-template-columns: 33% 33% 33%;
+    margin: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 #Footer h3 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    padding-left: 12px ;
 }
 
 .Footer_Nav_Link {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    color: rgb(59, 59, 59);
+    padding-left: 12px;
+    padding-bottom: 10px;
+}
+
+.Footer_Nav_Link:hover {
+    color: #0065FC;
 }
 
 /*Footer*/
