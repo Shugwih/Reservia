@@ -36,7 +36,7 @@ a {
     margin-right: 22px;
 }
 
-#Header_hosting_1 {
+#Header_hosting_1 { /*Fixed decoration for the Hosting header (Example for current selection*/
     border-top: 3px solid #0065FC;
     padding-top: 50px;
     color: #0065FC;
@@ -87,7 +87,7 @@ a {
     margin-left: 20px;
 }
 
-#search .fas {
+#search .fas { /*Font awesome item*/
     border: 1px solid transparent;
     background-color: #F2F2F2;
     border-radius: 15px 0 0 15px;
@@ -200,13 +200,13 @@ a {
 }
 
 #vacancy i {
-    padding-right: 11px;
+    padding-right: 11px; /*Font awesome item position*/
 }
 
 /*-------------------*/
 /*Core*/
 
-#Hosting_and_popular {
+#Hosting_and_popular { /*Position of the two central sections*/
     display: grid;
     grid-template-columns: 65% 35%;
 }
@@ -223,7 +223,7 @@ a {
     padding: 15px;
 }
 
-#Hosting_section i {
+#Hosting_section i { /*Font awesome item color*/
     color: #0065FC;
 }
 
@@ -246,6 +246,7 @@ a {
     background-color: white;
     margin-top: 6px;
     padding: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.397);
 }
 
 .Hosting_Box:hover {
@@ -305,13 +306,11 @@ a {
     align-items: center;
 }
 
-#Most_popular_titlebox i {
+#Most_popular_titlebox i { /*Font awesome item position*/
     padding-left: 170px;
 }
 
 .Most_popular_img {
-    max-height: 190px;
-    max-width: 190px;
     overflow: hidden;
 }
 
@@ -323,18 +322,31 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 12px 0 0 12px;
+    overflow: hidden;
 }
 
 .Most_popular {
     display: flex;
     margin: 20px;
+    margin-bottom: 50px;
     background-color: white;
     padding: 5px;
     border-radius: 12px;
     height: 140px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.397);
 }
 
-.Most_popular i {
+.Most_popular:hover {
+    cursor: pointer;
+    scale: 1.05;
+    transition-duration: 0.5s;
+}
+
+.Most_popular:hover img {
+    cursor: zoom-in;
+}
+
+.Most_popular i { /*Font awesome item color*/
     color: #0065FC;
 }
 
@@ -375,7 +387,6 @@ a {
     padding-left: 5px;
     font-weight: bold;
 }
-
 
 .Activity_box img {
     max-width: 100%;
