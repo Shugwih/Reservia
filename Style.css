@@ -9,6 +9,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300;1,400;1,500;1,600&display=swap');
 body {
     font-family: 'Raleway', sans-serif;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 form {
@@ -34,19 +36,31 @@ a {
     margin-right: 22px;
 }
 
+#Header_hosting_1 {
+    border-top: 3px solid #0065FC;
+    padding-top: 50px;
+    color: #0065FC;
+    margin-right: 60px;
+}
+
 .Header_Nav_Link {
     margin-right: 60px;
     color: #4d6180;
-    font-weight: bold;
     border: none;
     background-color: white;
 }
 
 .Header_Nav_Link:hover {
+    padding-top: 50px;
     color: #0065FC;
     cursor: pointer;
     border-top: 3px solid #0065FC;
-    transition: border-top 2s linear;
+    transition-duration: 0.4s;
+}
+
+#Subscribe_Header_Box a {
+    color: #0065FC;
+    font-weight: bold;
 }
 
 #Hosting_main_title {
@@ -98,6 +112,20 @@ a {
     background-color: #0065FC;
     color: white;
     font-weight: bold;
+    cursor: pointer;
+}
+
+#search_button:hover {
+    transition-duration: 0.7s;
+    background-size: 200%;
+    scale: 1.05;
+    background-image: linear-gradient(
+        to left,
+        #0065FC,
+        #3887ff,
+        #0065FC
+    );
+    background-position: right;
 }
 
 /*Research*/
@@ -149,6 +177,19 @@ a {
     min-width: 3.5rem;
 }
 
+.filter:hover {
+    scale: 1.05;
+    transition-duration: 0.7s;
+    background-size: 200%;
+    background-image: linear-gradient(
+        to left,
+        rgb(255, 255, 255),
+        #DEEBFF,
+        #DEEBFF
+    );
+    background-position: right;
+}
+
 /*Filter*/
 /*-------------------*/
 
@@ -193,7 +234,7 @@ a {
 
 #Main_Hosting_Box {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .Hosting_Box {
@@ -205,6 +246,16 @@ a {
     background-color: white;
     margin-top: 6px;
     padding: 5px;
+}
+
+.Hosting_Box:hover {
+    cursor: pointer;
+    scale: 1.05;
+    transition-duration: 0.5s;
+}
+
+.Hosting_Box:hover img {
+    cursor: zoom-in;
 }
 
 .Hosting_text {
@@ -230,6 +281,9 @@ a {
 #show_more_button {
     font-weight: bold;
     font-size: 1.32em;
+    margin-left: 15px;
+    cursor: pointer;
+    max-width: 130px;
 }
 
 /*Hosting Section*/
@@ -252,20 +306,23 @@ a {
 }
 
 #Most_popular_titlebox i {
-    padding-left: 70px;
-    font-size: 135%;
+    padding-left: 170px;
 }
 
 .Most_popular_img {
-    max-height: 180px;
-    max-width: 180px;
+    max-height: 190px;
+    max-width: 190px;
     overflow: hidden;
 }
 
 #Popular_section img {
     max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+    max-height: auto;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px 0 0 12px;
 }
 
 .Most_popular {
@@ -274,6 +331,7 @@ a {
     background-color: white;
     padding: 5px;
     border-radius: 12px;
+    height: 140px;
 }
 
 .Most_popular i {
@@ -283,7 +341,7 @@ a {
 .Popular_box {
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: 0 0 20px 20px;
     justify-content: center;
 }
 
@@ -291,12 +349,15 @@ a {
 /*-------------------*/
 /*Activity Section*/
 
-/*Activity Section*/
-
 #Activity_section {
-    margin-left: 2em;
-    margin-right: 2em;
-    margin-bottom: 2em;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#Main_activity_box {
+    display: flex;
+    align-items: flex-start;
 }
 
 .Activity_box {
@@ -306,7 +367,7 @@ a {
 .Activity_box figure {
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.397);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.397);
 }
 
 .Activity_box figcaption {
@@ -318,18 +379,9 @@ a {
 
 .Activity_box img {
     max-width: 100%;
+    text-align: center;
     height: auto;
     border-radius: 10px 10px 0 0;
-}
-
-#Main_activity_box {
-    display: grid;
-    grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
-}
-
-#Activity_3 #Activity_2 {
-    display: flex;
-    flex-direction: column;
 }
 
 /*Core*/
@@ -361,6 +413,7 @@ a {
     color: rgb(59, 59, 59);
     padding-left: 12px;
     padding-bottom: 10px;
+    width: 300px;
 }
 
 .Footer_Nav_Link:hover {
