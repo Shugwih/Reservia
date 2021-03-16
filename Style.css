@@ -34,7 +34,7 @@ a {
     margin-right: 22px;
 }
 
-#Header_hosting_1 { /*Fixed decoration for the Hosting header (Example for current selection*/
+#Header_hosting_1 { /*Fixed decoration for the Hosting header (Exemple for current selection*/
     border-top: 3px solid #0065FC;
     padding-top: 50px;
     color: #0065FC;
@@ -523,3 +523,17 @@ a {
 }
 
 /*Footer*/
+/*-------------------*/
+/*Responsive Iphone*/
+@media (max-width: 480px) 
+{
+    #Header {
+    padding: 5px;
+    }
+
+    #Header_hosting_1 {
+    border-bottom: 3px solid #0065FC;
+    padding-bottom: 5px;
+    border-top: none;
+    }
+}
