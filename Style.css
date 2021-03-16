@@ -527,13 +527,45 @@ a {
 /*Responsive Iphone*/
 @media (max-width: 480px) 
 {
-    #Header {
-    padding: 5px;
-    }
-
+    
     #Header_hosting_1 {
     border-bottom: 3px solid #0065FC;
     padding-bottom: 5px;
     border-top: none;
     }
+
+    #Main_filter {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #Hosting_and_popular {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #Popular_section {
+        order: -1;
+    }
+
+    .Most_popular {
+        margin: 20px;
+    }
+
+    #Main_Hosting_Box {
+        display:flex;
+        flex-direction: column;
+    }
+    
+    #Main_activity_box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #Footer {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
+
